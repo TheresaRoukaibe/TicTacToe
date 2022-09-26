@@ -14,6 +14,11 @@
 	margin: 40px;
 }
 
+.scores{
+	float: left;
+	margin: 5px;
+}
+
 .header{
 	font-family: myFont;
 	text-align:center;
@@ -24,4 +29,81 @@
 	font-family: myFont;
 	text-align:center;
 	color: 	#FFD700;
+}
+
+.tile1{
+	height:145px;
+	width:145px;
+	background-color:red;
+	float: left;
+	margin: 5px;
+}
+
+.tile2{
+	height:145px;
+	width:145px;
+	background-color:yellow;
+	float: left;
+	margin: 5px;
+}
+
+.tile3{
+	height:145px;
+	width:145px;
+	background-color:red;
+	float: left;
+	margin: 5px;
+}
+
+.tile4{
+	height:145px;
+	width:145px;
+	background-color:yellow;
+	position:relative;
+	top:170px;
+}
+
+.tile5{
+	height:145px;
+	width:145px;
+	background-color:red;
+	position:relative;
+	top:25px;
+	left:160px;
+}
+
+.tile6{
+	height:145px;
+	width:145px;
+	background-color:yellow;
+	position:relative;
+	top:-120px;
+	left:315px;
+}
+
+.tile7{
+	height:145px;
+	width:145px;
+	background-color:red;
+	position:relative;
+	top:-100px;
+	left:0px;
+}
+
+.tile8{
+	height:145px;
+	width:145px;
+	background-color:yellow;
+	position:relative;
+	top:-245px;
+	left:165px;
+}
+
+.tile9{
+	height:145px;
+	width:145px;
+	background-color:red;
+	position:relative;
+	top:-390px;
+	left:315px;
 }

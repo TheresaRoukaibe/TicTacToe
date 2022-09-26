@@ -5,5 +5,5 @@ tiles.forEach((tile,index) => {
 });
 
 const changeTile = (tile, index) => {
-	tile.style.backgroundImage="url(assets/red.png)";
+	console.log("working");
 }
