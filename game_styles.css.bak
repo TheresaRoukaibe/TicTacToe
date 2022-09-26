@@ -31,6 +31,7 @@
 	color: 	#FFD700;
 }
 
+/* Not sure how to make clickable divs in the backgroud picture any other way*/
 .tile1{
 	height:145px;
 	width:145px;
