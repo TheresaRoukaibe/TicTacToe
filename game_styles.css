@@ -3,18 +3,29 @@
 	src: url(assets/font.ttf);
 }
 
-#img {
+
+.board{
+	background-image: url("board.png");
+	background-repeat: no-repeat;
+	background-size: contain;
 	width: 50%;
 	height: 80%;
+	text-align:center;
+	margin: 40px;
 }
 
-#header{
+.scores{
+	float: left;
+	margin: 5px;
+}
+
+.header{
 	font-family: myFont;
 	text-align:center;
 	color: red;
 }
 
-#subHeader{
+.subHeader{
 	font-family: myFont;
 	text-align:center;
 	color: 	#FFD700;
