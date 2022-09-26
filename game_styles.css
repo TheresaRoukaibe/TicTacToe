@@ -1,8 +1,21 @@
-#bg {
-	text-align: center;
+@font-face{
+	font-family:myFont;
+	src: url(assets/font.ttf);
 }
 
 #img {
 	width: 50%;
-	height: 100%;	
+	height: 80%;
+}
+
+#header{
+	font-family: myFont;
+	text-align:center;
+	color: red;
+}
+
+#subHeader{
+	font-family: myFont;
+	text-align:center;
+	color: 	#FFD700;
 }
