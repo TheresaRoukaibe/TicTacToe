@@ -6,7 +6,6 @@
 </head>
 
 <body>
-<div id="game_header"> <h2> Press to begin </h2> </div> 
 <div id="bg"> <img id = "img" src = "board.png" > </div>
 </body>
 
