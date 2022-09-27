@@ -14,17 +14,28 @@
 </div>
 
 <!-- This section is the game board where the game is played -->
-<div class="board scores"> 
-<div class="tile1 tile"> hi </div>
-<div class="tile2 tile"> </div>
-<div class="tile3 tile"> </div>
-<div class="tile4 tile"></div>
-<div class="tile5 tile"> </div>
-<div class="tile6 tile"> </div>
-<div class="tile7 tile"> </div>
-<div class="tile8 tile"> </div>
-<div class="tile9 tile"> </div>
-</div>
+
+<table class="board scores">
+<tr>
+<th class="tile"> tile 1 </th>
+<th class="tile"> tile 2 </th>
+<th class="tile"> tile 3 </th>
+</tr>
+
+<tr>
+<th class="tile"> tile 4 </th>
+<th class="tile"> tile 5 </th>
+<th class="tile"> tile 6 </th>
+</tr>
+
+<tr>
+<th class="tile"> tile 7 </th>
+<th class="tile"> tile 8 </th>
+<th class="tile"> tile 9 </th>
+</tr>
+
+</table> 
+
 
 <!-- Scoring system -->
 <div class="scores">
@@ -33,7 +44,7 @@
 <h4 class="header"> Tie: </h4>
 </div>
  
-
+<script src="game_logic.js" type="text/javascript"></script>
 </body>
 
 </html> 

@@ -5,9 +5,17 @@
 
 
 .board{
-	background-image: url("board.png");
+	background-image: url("assets/board.png");
 	background-repeat: no-repeat;
 	background-size: contain;
+	width: 50%;
+	height: 80%;
+	text-align:center;
+	margin: 40px;
+	border: 1px solid black;
+}
+
+.board-size{
 	width: 50%;
 	height: 80%;
 	text-align:center;
@@ -31,80 +39,13 @@
 	color: 	#FFD700;
 }
 
-/* Not sure how to make clickable divs in the backgroud picture any other way*/
-.tile1{
-	height:145px;
-	width:145px;
-	background-color:red;
+.tile{
+	height:120px;
+	width:150px;
 	float: left;
 	margin: 5px;
+	background-repeat: no-repeat;
+	background-size: contain;
 }
 
-.tile2{
-	height:145px;
-	width:145px;
-	background-color:yellow;
-	float: left;
-	margin: 5px;
-}
 
-.tile3{
-	height:145px;
-	width:145px;
-	background-color:red;
-	float: left;
-	margin: 5px;
-}
-
-.tile4{
-	height:145px;
-	width:145px;
-	background-color:yellow;
-	position:relative;
-	top:170px;
-}
-
-.tile5{
-	height:145px;
-	width:145px;
-	background-color:red;
-	position:relative;
-	top:25px;
-	left:160px;
-}
-
-.tile6{
-	height:145px;
-	width:145px;
-	background-color:yellow;
-	position:relative;
-	top:-120px;
-	left:315px;
-}
-
-.tile7{
-	height:145px;
-	width:145px;
-	background-color:red;
-	position:relative;
-	top:-100px;
-	left:0px;
-}
-
-.tile8{
-	height:145px;
-	width:145px;
-	background-color:yellow;
-	position:relative;
-	top:-245px;
-	left:165px;
-}
-
-.tile9{
-	height:145px;
-	width:145px;
-	background-color:red;
-	position:relative;
-	top:-390px;
-	left:315px;
-}
