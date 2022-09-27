@@ -1,5 +1,8 @@
 const tiles = Array.from(document.querySelectorAll('.tile'));
 let current_player = 0;                                    //The player starts by default
+let game_status = 1;
+let board_state = new Array(-1,-1,-1,-1,-1,-1,-1,-1,-1);
+let winning_states = [];
 
 tiles.forEach((tile,index) => {
 	tile.addEventListener('click', () => changeTile(tile, index));
