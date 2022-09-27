@@ -28,6 +28,16 @@ const changeTile = (tile, index) => {
 	const my_element = tile.id;
 	const my_element_id = parseInt(my_element);
 	board_state[my_element_id] = current_player;
+for(let i=0; i< winning_states.length; i++){
+		const options = winning_states[i];
+		if(board_state[options[0]]!= -1 && board_state[options[0]]==board_state[options[1]] && board_state[options[1]] == board_state[options[2]]){
+			if(current_player==0){
+				help_text.innerText = "You won! We are impressed";
+			}else{
+				help_text.innerText = "How does it feel to lose to a bot?";
+			}
+		}
+	}
 	if(current_player == 0) {                             //computer is yellow user is red
 	tile.style.backgroundImage="url(assets/red.png)";
 	current_player=1;
@@ -37,8 +47,9 @@ const changeTile = (tile, index) => {
 	}
 	
 	
-	
 }
+
+
 const resetGame = (e) => {
 	game_status=1;
 	current_player=0;
