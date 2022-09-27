@@ -10,28 +10,28 @@
 <!-- This section is the header game information -->
 <div>
 <h1 class="header"> TIC-TAC-TOE </h1>
-<h3 class="subHeader"> Click on a space to begin playing against our bot! </h3>
+<h3 id="user-help" class="subHeader"> Click on a space to begin playing against our bot! </h3>
 </div>
 
 <!-- This section is the game board where the game is played -->
 
 <table class="board scores">
 <tr>
-<th class="tile"></th>
-<th class="tile"></th>
-<th class="tile"></th>
+<th id="1" class="tile"></th>
+<th id="2" class="tile"></th>
+<th id="3" class="tile"></th>
 </tr>
 
 <tr>
-<th class="tile"></th>
-<th class="tile"></th>
-<th class="tile"></th>
+<th id="4" class="tile"></th>
+<th id="5" class="tile"></th>
+<th id="6" class="tile"></th>
 </tr>
 
 <tr>
-<th class="tile"></th>
-<th class="tile"></th>
-<th class="tile"></th>
+<th id="7" class="tile"></th>
+<th id="8" class="tile"></th>
+<th id="9" class="tile"></th>
 </tr>
 
 </table> 
@@ -42,7 +42,7 @@
 <h4 class="header"> You: </h4>
 <h4 class="subHeader"> Computer: </h4>
 <h4 class="header"> Tie: </h4>
-<button id="button">Click me for a Rematch !</button>
+<button id="myButton">Click me for a Rematch !</button>
 </div>
  
 <script src="game_logic.js" type="text/javascript"></script>
