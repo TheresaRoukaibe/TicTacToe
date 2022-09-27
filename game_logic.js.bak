@@ -1,6 +1,9 @@
 const tiles = Array.from(document.querySelectorAll('.tile'));
+const replay = document.getElementById("myButton");
 let current_player = 0;                                    //The player starts by default
 let game_status = 1;
+let board_state = new Array(-1,-1,-1,-1,-1,-1,-1,-1,-1);
+let winning_states = [];
 
 
 tiles.forEach((tile,index) => {
@@ -16,4 +19,13 @@ const changeTile = (tile, index) => {
 		current_player=0;
 	}
 }
+
+const resetGame = (e) => {
+	console.log('working');
+}
+
+replay.addEventListener("click", resetGame);
+
+
+
 
