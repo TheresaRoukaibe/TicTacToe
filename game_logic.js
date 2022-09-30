@@ -34,10 +34,14 @@ const makeMove = (tile, index) => {
 	if(current_player==0){                                                    
 	const my_element = tile.id;
 	const my_element_id = parseInt(my_element);
+	if(board_state[my_element_id] != -1){
+		help_text.innerText = "Choose an empty space";
+	}else{
 	board_state[my_element_id] = current_player;
 	tile.style.backgroundImage="url(assets/red.png)";
 	current_player=1;
 	click_counter = click_counter+1;
+	}
 	}else{
 		let ai_move = Math.floor(Math.random() * 8);
 		while(board_state[ai_move] != -1){

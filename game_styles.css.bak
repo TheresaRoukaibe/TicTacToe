@@ -31,6 +31,7 @@
 	height: 80%;
 	text-align:center;
 	margin: 40px;
+	position:fixed;
 }
 
 .scores{
@@ -42,7 +43,6 @@
 	font-family: myFont;
 	text-align:center;
 	color: red;
-	position:fixed;
 }
 
 .subHeader{
@@ -53,8 +53,11 @@
 
 .tile{
 	height:75%;
-	width:150px;
-	float: left;
+	width:5%;
+	right:0;
+	left:5%;
+	position:fixed;
+	
 	margin: 5px;
 	background-repeat: no-repeat;
 	background-size: contain;
