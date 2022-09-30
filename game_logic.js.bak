@@ -1,10 +1,10 @@
-const tiles = Array.from(document.querySelectorAll('.tile'));
+const tiles = Array.from(document.querySelectorAll('.tile'));          
 const replay = document.getElementById("myButton");
 const help_text = document.getElementById("user-help");
 const user_scores = document.getElementById("user-score");
 const bot_scores = document.getElementById("bot-score");
 const tie_nums = document.getElementById("ties");
-let current_player = 0;                                    //The player starts by default
+let current_player = 0;                                                           //The player starts by default, human is 0
 let game_status = 1;
 let board_state = new Array(-1, -1, -1, -1, -1, -1, -1, -1, -1);
 let click_counter =0;
@@ -31,7 +31,7 @@ tiles.forEach((tile,index) => {
 
 const makeMove = (tile, index) => {
 	help_text.innerText = "Game has started!"; 
-	if(current_player==0){
+	if(current_player==0){                                                    
 	const my_element = tile.id;
 	const my_element_id = parseInt(my_element);
 	board_state[my_element_id] = current_player;
@@ -40,10 +40,12 @@ const makeMove = (tile, index) => {
 	click_counter = click_counter+1;
 	}else{
 		let ai_move = Math.floor(Math.random() * 8);
-		if(board_state[ai_move] == -1){
+		while(board_state[ai_move] != -1){
+		ai_move = Math.floor(Math.random() * 8);
+		}
 		board_state[ai_move] = current_player;
 		const el = document.getElementById(ai_move);
-		el.style.backgroundImage="url(assets/yellow.png)";
+		el.style.backgroundImage="url(assets/yellow.png)";              //bot is yellow, user is red 
 		current_player=0;
 		click_counter = click_counter+1;
 		}
